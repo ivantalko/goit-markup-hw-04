@@ -223,6 +223,7 @@ p {
   color: #757575;
 }
 .peculiarities-icon {
+  margin-bottom: 30px;
   display: inline-block;
   width: 270px;
   height: 120px;

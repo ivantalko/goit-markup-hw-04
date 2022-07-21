@@ -329,6 +329,12 @@ p {
 .teams-link:hover {
   background-color: var(--acsent-color);
 }
+.teams-link:focus .teams-icon {
+  fill: var(--ptimari-bg-color);
+}
+.teams-link:focus {
+  background-color: var(--acsent-color);
+}
 /*------------------- regular customers---------------*/
 .customers {
   display: block;
@@ -353,15 +359,15 @@ p {
 .customers-list {
   margin-right: 30px;
 }
-.customers-list .customers-link {
+.customers-link {
   display: flex;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
   width: 170px;
   height: 92px;
   align-items: center;
   justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  outline: none;
 }
 .customers-icon {
   fill: #afb1b8;
@@ -369,16 +375,24 @@ p {
 .customers-icon:hover {
   fill: #2196f3;
 }
+.customers-link:focus .customers-icon {
+  fill: #2196f3;
+}
+.customers-link:focus {
+  border-color: #2196f3;
+}
+
 .customers-link:hover {
   border-color: #2196f3;
 }
 
-/* footer */
+/* ------------------footer--------------------*/
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+
 .adress {
   padding: 0;
 }
@@ -390,7 +404,7 @@ p {
 }
 
 .logo-footer {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   font-family: 'Raleway';
   font-weight: 700;
@@ -440,6 +454,54 @@ p {
 .adress .tel:hover,
 .adress .tel:focus {
   color: #2196f3;
+}
+
+.social-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.social-right {
+  display: flex;
+}
+.social-item {
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+.social-list {
+  display: flex;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon {
+  fill: #ffffff;
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: #ffffff;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196f3;
 }
 
 /*button*/
